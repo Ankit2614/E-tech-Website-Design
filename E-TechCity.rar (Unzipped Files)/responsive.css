@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+	.logo-content{
+		font-size: 25px;
+	}
+
+	.menubar{
+		display: none;
+		position: absolute;
+		top: 200%;
+		left: 20%;
+	}
+
+	.menubar ul{
+		flex-direction: column;
+
+	}
+
+	#iconBtn{
+		display: block;
+	}
+  }

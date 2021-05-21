@@ -1,0 +1,544 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+/* --------------------------- HEADER SECTION BACKGROUND--------------------------------------- */
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+header::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background: url('Home.jpg') no-repeat center center/cover; */
+	background: black;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+/* -------------------------END HEADER SECTION BACKGROUND------------------------------------- */
+
+/* -----------------------------NAVBAR SETTING -------------------------------------- */
+
+/* ============================= START NAVBAR BACKGROUND====================================== */
+.navbar{
+	/* background: red; */
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar::before{
+	content: '';
+	background: black;
+	/* background: #f3ca20; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+/* ===============================END OF NAVBAR BACKGROUND================================= */
+
+/* ====================== START NAVBAR LOGO=========================== */
+.navbar .logo{
+	/* background: white; */
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .navbar .logo img{
+	width: 50%;
+	height: 100%;
+} */
+
+.navbar .logo-content{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	font-family: 'Cairo', sans-serif;
+}
+/* ========================END OF NAVBAR LOGO=======================  */
+
+/* ----------------------------------START NAVIGATION MENUBAR----------------------------- */
+.menubar{
+	width: 70%;
+	height: 100%;
+	/* background: black; */
+}
+
+.menubar ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.menubar ul li a{
+	color: white;
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: block;
+	padding: 10px;
+
+}
+
+#iconBtn{
+	display: none;
+}
+
+#iconBtn .fas{
+	margin-left: 10px;
+	color: white;
+	font-size: 25px;
+}
+
+/* -------------------------------END OF NAVIGATION MENUBAR------------------------------- */
+
+/* ======================ANCHOR TAG HOVER EFFECT===================================== */
+.menubar ul li a::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 3px solid white;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+}
+
+.menubar ul li a:hover{
+	border-bottom: 3px solid black;
+	color: black;
+	transition: all 1s linear;
+}
+
+.menubar ul li a:hover::after{
+	/* position: absolute; */
+	/* width: 100%; */
+	height: 100%;
+	transition: all 1s linear;
+	background: white;
+}
+/* ======================END OF ANCHOR TAG HOVER EFFECT===================================== */
+
+/* -----------------------------START HEADER MAIN CONTENT SECTION----------------------------- */
+.header-main-content{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.header-main-box{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header-primary-content{
+	font-size: 80px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	/* font-family: 'Cairo', sans-serif; */
+}
+
+.header-secondary-content{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-family: 'Cairo', sans-serif;
+}
+
+.header-main-btn{
+	/* width: ; */
+	/* height: 40px; */
+	font-size: 25px;
+	font-weight: bold;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	background: black;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid white;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 8px 8px 5px black;
+	font-family: 'Cairo', sans-serif;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.header-main-btn:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	transition: 0.4s linear;
+}
+/* -----------------------------END OF HEADER MAIN CONTENT SECTION----------------------------- */
+
+/* ==============================START ABOUT SECTION========================================== */
+
+/* ==========================BACKGROUND OF ABOUT SECTION============================ */
+.aboutHeadingBox{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+}
+
+.aboutHeadingBox::before{
+	content: '';
+	background: black;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+/* ==========================END OF BACKGROUND OF ABOUT SECTION============================ */
+.about{
+	font-size: 60px;
+	font-weight: bold;
+	color: #000;
+	margin: 40px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.about-main-content{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.standingMan{
+	width: 30%;
+	height:500px;
+	/* background: red; */
+	/* position: relative; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* z-index: -1; */
+
+}
+
+.standingMan img{
+	/* position: absolute; */
+	/* top: 0;
+	left: 0; */
+	width: 70%;
+	height: 70%;
+	border-radius: 10% 50% 10% 50%;
+	border: 1px solid black;
+	box-shadow: 5px 5px 3px black;
+}
+
+/* .standingMan img:hover{
+	transform: scale(-1, 1);
+	transition: all 0.5s linear;
+} */
+
+/* ---------------------DESCRIPTION BOX CONTENT LINE-------------------- */
+.descripitionBox{
+	width: 70%;
+	height: 100%;
+	/* background: red; */
+	display: flex;
+	/* justify-content: space-evenly; */
+	/* align-items: center; */
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.about-main-content-heading{
+	/* margin: 40px 30px; */
+	margin: 90px 0px 20px 0px;
+	font-size: 50px;
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+.about-main-content-description{
+	font-size: 20px;
+	font-family: 'Cairo', sans-serif;
+	text-transform: capitalize;
+}
+/* ------------------END OF DESCRIPTION BOX CONTENT LINE------------------ */
+
+/* =====================END OF ABOUT SECTION============================ */
+
+/* ------------------START OF OUR SERVICES SECTION---------------------- */
+.Our-Services{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+}
+.Our-Services::before{
+	content: '';
+	background: black;
+	/* background: #f3ca20; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+
+.our-services-heading{
+	font-size: 60px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 30px solid white;
+	width: 100%;
+	/* margin: 10px 0px; */
+}
+
+.services-items{
+	width: 100%;
+	min-height: 70vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.items{
+	width: 33.333%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.items img{
+	width: 130px;
+	/* border-radius: 50%; */
+}
+
+.web-design img{
+	width: 110px;
+}
+
+.seo img{
+	width: 105px;
+}
+
+.subheading{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin: 20px 0px;
+}
+
+.paragraph{
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Cairo', sans-serif;
+	line-height: 40px;
+	color: white;
+}
+
+.itemBtn{
+	/* width: ; */
+	/* height: 40px; */
+	display: block;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	background: black;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid white;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 8px 8px 5px black;
+	font-family: 'Cairo', sans-serif;
+	position: relative;
+	top: 20px;
+	left: 0;
+}
+
+.itemBtn:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	transition: 0.4s linear;
+}
+
+/* ------------------END OF OUR SERVICES SECTION---------------------- */
+
+/* =====================START OF CONTACT US SECTION========================== */
+.contact-mainHeading{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	margin: 100px 0px 20px 0px;
+	/* padding: 20px 0px; */
+	border-bottom: 10px solid black;
+}
+
+.contactForm{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.inputbox{
+	width: 50%;
+	height: 50px;
+	margin: 20px 0px;
+	padding: 10px 0px 10px 10px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	border-bottom: 3px solid black;
+
+}
+
+.inputbox::placeholder{
+	font-size: 20px;
+
+}
+
+textarea{
+	width: 50%;
+	height: 150px;
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px 0px 10px 10px;
+	border: 3px solid black;
+	outline: none;
+}
+
+textarea::placeholder{
+	font-size: 20px;
+}
+
+.submitbtn{
+	width: 50%;
+	height: 50px;
+	margin: 30px 0px 10px 0px;
+	padding: 10px 0px;
+	background: black;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 3px solid transparent;
+}
+
+.submitbtn:hover{
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	border: 3px solid black;
+}
+/* =====================END OF CONTACT US SECTION========================== */
+
+/* ===================== START OF BACK TO TOP MENU BUTTON SECTION=========================== */
+.btnwidth{
+	width: 100%;
+	height: 30%;
+	background: black;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 20px 10px 10px;
+}
+
+.topbtn{
+	background: red;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.linktopbtn{
+	display: block;
+	font-size: 25px;
+	color: white;
+}
+/* ====================END OF BACK TO MENU BUTTON SECTION========================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
